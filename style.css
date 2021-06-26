@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+*{
+    box-sizing: border-box; 
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size:16px;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Images/landing.jpg);
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 9.4rem;
+    color: rgb(148, 145, 145);
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.nav-links ul li a::after{
+    content: "";
+    width: 0%;
+    height: 0.125rem;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+
+.helo-page{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.helo-page .search{
+    position: relative;
+    width: 18.75rem;
+    height: 2.5rem;
+}
+
+.helo-page .search input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: transparent;
+    outline: none;
+    border: 0.0625rem solid rgb(148, 145, 145);
+    border-radius: 1.25rem;
+    padding: 0 0.625rem 0 2.8125rem;
+}
+
+.helo-page .search input::placeholder{
+    color: rgb(148, 145, 145);
+}
+
+.helo-page .search .fa-search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.625rem;
+    color: rgb(148, 145, 145);
+    border-right: 0.0625rem solid rgb(148, 145, 145);
+    padding-right: 0.625rem;
+}
+
+.helo-page h2{
+    font-size: 3.9rem;
+}
+
+.helo-page p{
+    margin: 0.63rem 0 2.5rem;
+    font-size: 0.875rem;
+    color: whitesmoke;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    border: 0.0625rem solid whitesmoke;
+    padding: 0.75rem 2.125rem;
+    font-size: 0.8125rem;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 0.0625rem solid red;
+    background: red;
+    transition: 1s;
+}
+
+.benefit{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.benefit h3{
+    font-size: 0.9rem;
+}
+
+.benefit ul{
+    list-style: none;
+    margin: 0.5rem 0 0.5rem;
+    font-size: 0.875rem;
+    color: whitesmoke;
+}
+
+.nav .fa{
+    display: none;
+}
+
+@media(max-width: 50rem){
+    .helo-page h2{
+        font-size: 1.25rem;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: red;
+        height: 100vh;
+        width: 12.5rem;
+        top: 0;
+        right: -12.5rem;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .nav .fa{
+        display: block;
+        color: whitesmoke;
+        margin: 0.625rem;
+        font-size: 1.375rem;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 1.875rem;
+    }
+    .nav-links ul li a{
+        color: whitesmoke;
+    }
+    .benefit h3{
+        font-size: 0.8rem;
+    }
+    .benefit ul{
+        margin-right: 2.5rem;
+        font-size: 0.6rem;
+    }
+    .helo-page .search{
+        margin-bottom: 20%;
+        width: 15.75rem;
+    }
+}
+
+/*----- Info -----*/
+
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 6.25rem;
+}
+
+h4{
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.375rem;
+    padding: 0.625rem;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-column{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 0.625rem;
+    margin-bottom: 5%;
+    padding: 1.25rem 0.75rem;
+    box-sizing: border-box;
+}
+
+h5{
+    text-align: center;
+    font-weight: 600;
+    margin: 0.625rem;
+}
+
+.info-column:hover{
+    box-shadow: 0 0 1.25rem 0 rgba(0,0,0,0.2);
+}
+
+@media(max-width: 50rem){
+    .row{
+        flex-direction: column;
+    }
+    .about h4{
+            font-size: 1.25rem;
+        }
+}
+
+/*----- SignIn -----*/
+
+.signIn{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 3.125rem;
+}
+
+h6{
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.row1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.campus-column{
+    flex-basis: 32%;
+    border-radius: 0.625rem;
+    margin-bottom: 1.875rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-column img{
+    width: 100%;
+    display: block;
+}
+
+.skills{
+    padding-top: 3.125rem;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+
+.layer h7 a{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.325rem;
+    bottom: 2.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.layer:hover h7 a{
+    bottom: 46.5%;
+    opacity: 1;
+}
+
+@media(max-width: 50rem){
+    .row1{
+        flex-direction: column;
+    }
+    .signIn h6{
+        font-size: 1.25rem;
+    }
+}
+
+/* ----- Testimonials ----- */
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 6.25rem;
+    text-align: center;
+}
+
+.row2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h8{
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.testimonial-column{
+    flex-basis: 44%;
+    border-radius: 0.625rem;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 1.5625rem;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimonial-column img{
+    height: 2.5rem;
+    margin-left: 0.3125rem;
+    margin-right: 1.875rem;
+    border-radius: 50%;
+}
+
+.testimonial-column p{
+    padding: 0;
+}
+
+.testimonial-column h3{
+    margin-top: 0.9375rem;
+    text-align: left;
+}
+
+.testimonial-column .fa{
+    color: #f44336;
+}
+
+@media(max-width: 50rem){
+    .row2{
+        flex-direction: column;
+    }
+    .testimonials h8{
+        font-size: 1.25rem;
+    }
+    .testimonial-column img{
+        margin-left: 0;
+        margin-right: 0.9375rem;
+    }
+}
+
+/*----- Contact ----- */
+
+.cta{
+    margin: 6.25rem auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(Images/Client2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.625rem;
+    text-align: center;
+    padding: 6.25rem 0;
+}
+
+.cta h4{
+    color: white;
+    margin-bottom: 2.5rem;
+    padding: 0;
+}
+
+.icons .fa{
+    margin: 5rem 0.8125rem;
+    color: red;
+    padding: 1.125rem 0;
+}
+
+.fa-heart-o{
+    color: red;
+}
+
+@media(max-width: 50rem){
+    .cta h4{
+        font-size: 1.25rem;
+    }
+}
