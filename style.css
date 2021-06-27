@@ -275,6 +275,7 @@ h5{
 h6{
     font-size: 2.25rem;
     font-weight: 600;
+    margin: 0.625rem;
 }
 
 .row1{
@@ -439,4 +440,20 @@ h8{
     .cta h4{
         font-size: 1.25rem;
     }
+}
+
+/*----- Videos ----- */
+
+.video{
+    margin: auto;
+    position: relative;
+    padding: 3.25rem 0;
+}
+
+/*----- Videos ----- */
+
+.pictures{
+    margin: auto;
+    position: relative;
+    padding: 3.25rem 0;
 }
