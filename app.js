@@ -10,3 +10,15 @@ function showMenu() {
 function hideMenu() {
   navLinks.style.right = "-12.5rem";
 }
+
+var videoPlayer = document.getElementById("videoPlayer");
+var myVideo = document.getElementById("myVideo");
+
+function stopVideo(){
+  videoPlayer.style.display = "none";
+}
+
+function startVideo(file){
+  myVideo.src = file;
+  videoPlayer.style.display = "block";
+}

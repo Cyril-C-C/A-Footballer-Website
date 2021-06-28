@@ -260,8 +260,10 @@
         <!-- Footer -->
 
         <section class="icons" id="icons">
-          <a href="https://github.com/Cyril-C-C" target="_blank"
-            ><i class="fa fa-github"></i
+          <a
+            href="https://api.whatsapp.com/send?phone=+2348138742493"
+            target="_blank"
+            ><i class="fa fa-whatsapp"></i
           ></a>
           <a href="https://www.facebook.com/cyrilchidolue" target="_blank"
             ><i class="fa fa-facebook"></i
@@ -289,13 +291,82 @@
             <h1 class="logo">Pio Chimezie</h1>
           </nav>
         </section>
-        <h8>Watch Pio Play</h8>
 
         <section class="video" id="video">
+          <h8>Watch Pio Play</h8>
           <section class="vid-columns" id="vid-columns">
-            <video width="640" height="352" controls>
+            <section class="vid-rows" id="vid-rows">
+              <section class="feature-img" id="feature-img">
+                <img src="images/vid.jpg" width="100%" />
+                <img
+                  src="images/play.png"
+                  class="play-btn"
+                  id="play-btn"
+                  onclick="startVideo('images/Video.mp4')"
+                />
+              </section>
+            </section>
+            <section class="vid-rows" id="vid-rows">
+              <section class="small-padding">
+                <section class="small-img-row" id="small-img-row">
+                  <section class="small-img" id="small-img">
+                    <img src="images/pio.ico" />
+                    <img
+                      src="images/play.png"
+                      class="play-btn"
+                      id="play-btn"
+                      onclick="startVideo('images/Video.mp4')"
+                    />
+                  </section>
+                  <p>
+                    Pio Chimezie did it again!!! He has always done it...<br />
+                    This time was with your beloved team PA, Oko.
+                  </p>
+                </section>
+                <section class="small-img-row" id="small-img-row">
+                  <section class="small-img" id="small-img">
+                    <img src="images/pio.ico" />
+                    <img
+                      src="images/play.png"
+                      class="play-btn"
+                      id="play-btn"
+                      onclick="startVideo('images/Video.mp4')"
+                    />
+                  </section>
+                  <p>
+                    Pio Chimezie did it again!!! He has always done it...<br />
+                    This time was with your beloved team PA, Oko.
+                  </p>
+                </section>
+                <section class="small-img-row" id="small-img-row">
+                  <section class="small-img" id="small-img">
+                    <img src="images/pio.ico" />
+                    <img
+                      src="images/play.png"
+                      class="play-btn"
+                      id="play-btn"
+                      onclick="startVideo('images/Video.mp4')"
+                    />
+                  </section>
+                  <p>
+                    Pio Chimezie did it again!!! He has always done it...<br />
+                    This time was with your beloved team PA, Oko.
+                  </p>
+                </section>
+              </section>
+            </section>
+          </section>
+
+          <section class="video-player" id="videoPlayer">
+            <video width="100%" controls autoplay muted id="myVideo">
               <source src="images/Video.mp4" type="video/mp4" />
             </video>
+            <img
+              src="images/cancel.png"
+              class="close-btn"
+              id="close-btn"
+              onclick="stopVideo()"
+            />
           </section>
         </section>
       </section>
