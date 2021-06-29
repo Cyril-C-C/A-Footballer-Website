@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <title>Pio Chimezie - The Official Website of Pio Chimezie</title>
+    <link rel="shortcut icon" href="images/pio.ico" />
+
+    <!-- Linking HTML to CSS. -->
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <body>
+      <header class="header1" id="header1">
+        <section class="navbar1" id="navbar1">
+          <nav class="nav1" id="nav1">
+            <h1 class="logo1">Pio Chimezie</h1>
+            <section class="nav-links1" id="navLinks1">
+              <i class="fa fa-times" onclick="hideMenu1()"></i>
+              <ul>
+                <li><a href="/landing.html">HOME</a></li>
+                <li><a href="/about.html">ABOUT</a></li>
+                <li><a href="/attribute.html">ATTRIBUTES</a></li>
+                <li><a href="/testimonials.html">TESTIMONIALS</a></li>
+                <li><a href="/contact.html">CONTACT</a></li>
+                <li><a href="/videos.html">VIDEOS</a></li>
+                <li><a href="/gallary.html">GALLARY</a></li>
+              </ul>
+            </section>
+            <i class="fa fa-bars" onclick="showMenu1()"></i>
+          </nav>
+        </section>
+      </header>
+
+      <!-- Videos -->
+
+      <section class="video" id="video">
+        <h8>Watch Pio Play</h8>
+        <section class="vid-columns" id="vid-columns">
+          <section class="vid-rows" id="vid-rows">
+            <section class="feature-img" id="feature-img">
+              <img src="images/vid.jpg" width="100%" />
+              <img
+                src="images/play.png"
+                class="play-btn"
+                id="play-btn"
+                onclick="startVideo('images/Video.mp4')"
+              />
+            </section>
+          </section>
+          <section class="vid-rows" id="vid-rows">
+            <section class="small-padding">
+              <section class="small-img-row" id="small-img-row">
+                <section class="small-img" id="small-img">
+                  <img src="images/pio.ico" />
+                  <img
+                    src="images/play.png"
+                    class="play-btn"
+                    id="play-btn"
+                    onclick="startVideo('images/Video.mp4')"
+                  />
+                </section>
+                <p>
+                  Pio Chimezie did it again!!! He has always done it...<br />
+                  This time was with your beloved team PA, Oko.
+                </p>
+              </section>
+              <section class="small-img-row" id="small-img-row">
+                <section class="small-img" id="small-img">
+                  <img src="images/pio.ico" />
+                  <img
+                    src="images/play.png"
+                    class="play-btn"
+                    id="play-btn"
+                    onclick="startVideo('images/Video.mp4')"
+                  />
+                </section>
+                <p>
+                  Pio Chimezie did it again!!! He has always done it...<br />
+                  This time was with your beloved team PA, Oko.
+                </p>
+              </section>
+              <section class="small-img-row" id="small-img-row">
+                <section class="small-img" id="small-img">
+                  <img src="images/pio.ico" />
+                  <img
+                    src="images/play.png"
+                    class="play-btn"
+                    id="play-btn"
+                    onclick="startVideo('images/Video.mp4')"
+                  />
+                </section>
+                <p>
+                  Pio Chimezie did it again!!! He has always done it...<br />
+                  This time was with your beloved team PA, Oko.
+                </p>
+              </section>
+            </section>
+          </section>
+        </section>
+
+        <section class="video-player" id="videoPlayer">
+          <video width="100%" controls autoplay muted id="myVideo">
+            <source src="images/Video.mp4" type="video/mp4" />
+          </video>
+          <img
+            src="images/cancel.png"
+            class="close-btn"
+            id="close-btn"
+            onclick="stopVideo()"
+          />
+        </section>
+      </section>
+
+      <!-- Linking HTML to JavaScript -->
+
+      <script src="./app.js"></script>
+    </body>
+  </head>
+</html>
