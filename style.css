@@ -709,15 +709,123 @@ video:focus{
 
 /*----- Pictures ----- */
 
-.pictures{
+.gallary-cover{
     margin: auto;
     position: absolute;
     top: 50%; 
     left: 50%;
-    transform: translate(-50%, 0);
-    padding: 3.25rem 0;
+    transform: translate(-50%, -3%);
 }
 
-.pictures h5{
-    font-size: 2.25rem;
+.close {
+    background: none;
+    color: black;
+    border: 0;
+}
+
+.gallary{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 6.25rem);
+    grid-auto-rows: 6.25rem;
+    grid-auto-flow: dense;
+}
+
+.item{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+}
+
+.item img{
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item__overlay{
+    background: #ffc60032;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    transition: 0.2s;
+    transform: translateY(100%);
+}
+
+.item__overlay button {
+    background: none;
+    border: 0.125rem solid white;
+    border-radius: 1.25rem;
+    color: white;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.3125rem;
+    cursor: pointer;
+}
+
+.item:hover .item__overlay{
+    transform: translateY(0);
+}
+
+
+.item.v2{
+    grid-row: span 2;
+}
+
+.item.v3{
+    grid-row: span 3;
+}
+
+.item.v4{
+    grid-row: span 4;
+}
+
+.item.h2{
+    grid-column: span 2;
+}
+
+.item.h3{
+    grid-column: span 3;
+}
+
+.item.h4{
+    grid-column: span 4;
+}
+
+.overlay{
+    position: fixed;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: 2;
+}
+
+.overlay.open{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.overlay-inner {
+    background: white;
+    width: 43.75rem;
+    padding: 1.25rem;
+}
+
+.overlay img{
+    width: 100%;
+}
+
+@media(max-width: 26.57rem){
+    .gallary-cover{
+        transform: translate(-50%, -2.25%);
+    }
 }
