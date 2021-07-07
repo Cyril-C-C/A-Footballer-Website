@@ -763,7 +763,7 @@ video:focus{
     border-radius: 1.25rem;
     color: white;
     text-transform: uppercase;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(253, 2, 2, 0.5);
     padding: 0.3125rem;
     cursor: pointer;
 }
