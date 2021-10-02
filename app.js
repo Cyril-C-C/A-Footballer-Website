@@ -57,6 +57,7 @@ function randomNumber(limit) {
 }
 
 function handleClick(e) {
+  
   const src = e.currentTarget.querySelector('img').src;
   overlayImage.src = src;
   overlay.classList.add('open');
