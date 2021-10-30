@@ -202,8 +202,7 @@ html,body{
         font-size: 0.6rem;
     }
     .helo-page .search{
-        margin-bottom: 20%;
-        width: 15.75rem;
+        display: hidden;
     }
 }
 
